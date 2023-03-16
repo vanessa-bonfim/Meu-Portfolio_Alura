@@ -1,0 +1,22 @@
+:root {
+    --fonte-familia-corpo: 'Raleway', sans-serif;
+
+    --fonte-tamanho-14: 14px;
+    --fonte-tamanho-16: 16px;
+    --fonte-tamanho-22: 22px;
+    --fonte-tamanho-botao: 22px;
+    --fonte-peso-400: 400;
+    --fonte-peso-500: 500;
+    --fonte-peso-600: 600;
+    --fonte-peso-700: 700;
+
+    
+    --cor-primaria: #2A7AE4;
+    --cor-secundaria: #E5E5E5;
+    --cor-contraste-escuro: #464646;
+    --cor-contraste-medio: #A2A2A2;
+    --cor-contraste-claro: #fff;
+  
+
+    --sombra: 0 5px 10px #55a6ff38;
+}

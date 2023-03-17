@@ -7,41 +7,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vanessa Bonfim | Portfólio-DEV</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./asset/css/base/reset.css">
     <link rel="stylesheet" href="./asset/css/base/base.css">
     <link rel="stylesheet" href="./asset/css/style.css">
 </head>
 
 <body>
-    <header class="container flex cabecalho">
-        <img src="asset/img/stars.svg" alt="">
-        <h1>Vanessa Bonfim</h1>
-        <nav>
-            <ul>
-                <li><a href="#sobreMim">Sobre mim</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#hobbies">Hobbies</a></li>
-                <li><a href="#formacoes">Formações</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contacto">vanesssabonfim@gmail.com</a></li>
+    <header class="cabecalho container flex">
+        <div class="cabecalho__titulo-caixa flex">
+            <img src="asset/img/stars.svg" alt="Estrelas">
+            <h1 class="cabecalho__titulo">Vanessa Bonfim</h1>
+        </div>
+        <nav class="cabecalho__menu-nav">
+            <ul class="cabecalho__menu-nav-caixa flex">
+                <li class="cabecalho__menu-nav-item"><a href="#sobreMim">Sobre mim</a></li>
+                <li class="cabecalho__menu-nav-item"><a href="#skills">Skills</a></li>
+                <li class="cabecalho__menu-nav-item"><a href="#hobbies">Hobbies</a></li>
+                <li class="cabecalho__menu-nav-item"><a href="#formacoes">Formações</a></li>
+                <li class="cabecalho__menu-nav-item"><a href="#projetos">Projetos</a></li>
+                <li class="cabecalho__menu-nav-item"><a href="#contacto">vanesssabonfim@gmail.com</a></li>
             </ul>
         </nav>
     </header>
     <main class="container">
-        <section class="chamada">
-            <img src="" alt="">
-            <h2>Olá meu nome é fulana de tal e construo páginas web</h2>
-            <h3>
-                Eu sou formada em lorem ipsum sit amet consectetur e atualmente estou participando no projeto Oracle ONE
-                na Alura.
+        <section class="chamada flex flex--column">
+            <img class="chamada__image" src="" alt="Foto da Vanessa">
+            <h2 class="chamada__titulo-principal">Olá, seja muito bem vindo ao meu Currículo Online!</h2>
+            <h3 class="chamada__titulo-secundario">
+                Sou licenciada em Letras e atualmente estou participar do projeto Oracle ONE
+                na Alura. Fique mais um bocadinho...
             </h3>
-            <nav>
-                <ul>
-                    <li><a href="">Github<i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
-                    <li><a href="">Linkedin<i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
-                    <li><a href="">Instagram<i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
-                    <li><a href="">Curriculo<i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+            <nav class="chamada__menu">
+                <ul class="chamada__menu-caixa flex flex--row">
+                    <li class="chamada__menu-item"><a href="">Github<i class="chamada__font-awesome fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                    <li class="chamada__menu-item"><a href="">Linkedin<i class="chamada__font-awesome fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                    <li class="chamada__menu-item"><a href="">Instagram<i class="chamada__font-awesome fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                    <li class="chamada__menu-item"><a href="">Curriculo<i class="chamada__font-awesome fa-solid fa-arrow-up-right-from-square"></i></a></li>
                 </ul>
             </nav>
         </section>
@@ -88,7 +92,7 @@
         <section class="formacao">
             <h2 id="formacoes">Formação Acadêmica</h2>
             <div>
-                <img src="asset/img/facujk.jpg" alt="">
+                <img src="asset/img/facujk.jpg" alt="" width="80">
                 <h3>Análise de dados</h3>
                 <p>2018 - UFRP</p>
             </div>
@@ -136,10 +140,11 @@
         </section>
         <section class="contacto">
             <div>
-                <img src="asset/img/phoneDesktop.png" alt="">
+                <img src="asset/img/phoneDesktop.png" alt="" width="80">
             </div>
             <h2 id="contacto">Contacto</h2>
-            <p>Quer entrar em contato comigo? Preencha o formulário ao lado e entrarei em contato o mais rápido possível.</p>
+            <p>Quer entrar em contato comigo? Preencha o formulário ao lado e entrarei em contato o mais rápido
+                possível.</p>
             <form action="">
                 <fieldset>
                     <div>

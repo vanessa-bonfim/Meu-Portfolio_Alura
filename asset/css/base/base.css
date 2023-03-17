@@ -1,6 +1,11 @@
 @import url(_reset.css);
 @import url(_variaveis.css);
 
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
 body {
     background-color: var(--cor-secundaria);
 	color: var(--cor-contraste-escuro);
@@ -12,20 +17,30 @@ body {
 	color: var(--cor-primaria);
 	font-size: 2rem;
 }
+.chamada__font-awesome {
+	color: var(--cor-contraste-escuro);
+	font-size: 0.8rem;
+	margin-left: 0.2rem;
+}
+
 .container {
 	padding-right: 1rem;
 	padding-left: 1rem;
+	width: 100%;
 }
 
 .flex {
 	display: flex;
 }
 
-.flex--centro {
+.flex--center {
 	align-items: center;
 	justify-content: center;
 }
 
-.flex--coluna {
+.flex--column {
 	flex-direction: column;
+}
+.flex--row {
+	flex-direction: row;
 }

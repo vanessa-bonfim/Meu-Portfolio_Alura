@@ -10,74 +10,101 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./asset/css/base/reset.css">
     <link rel="stylesheet" href="./asset/css/base/base.css">
     <link rel="stylesheet" href="./asset/css/style.css">
 </head>
 
 <body>
-    <header class="cabecalho container flex">
-        <div class="cabecalho__titulo-caixa flex">
-            <img src="asset/img/stars.svg" alt="Estrelas">
-            <h1 class="cabecalho__titulo">Vanessa Bonfim</h1>
+    <header class="borda cabecalho container flex">
+        <div class="borda cabecalho__titulo-caixa flex">
+            <div class="borda cabecalho__titulo-item">
+                <img src="asset/img/stars.svg" alt="Estrelas">
+            </div>
+            <div class="borda cabecalho__titulo-item">
+                <h1 class="cabecalho__titulo">Vanessa Bonfim</h1>
+            </div>
         </div>
-        <nav class="cabecalho__menu-nav">
+        <nav class="borda cabecalho__menu-nav flex">
             <ul class="cabecalho__menu-nav-caixa flex">
-                <li class="cabecalho__menu-nav-item"><a href="#sobreMim">Sobre mim</a></li>
-                <li class="cabecalho__menu-nav-item"><a href="#skills">Skills</a></li>
-                <li class="cabecalho__menu-nav-item"><a href="#hobbies">Hobbies</a></li>
-                <li class="cabecalho__menu-nav-item"><a href="#formacoes">Formações</a></li>
-                <li class="cabecalho__menu-nav-item"><a href="#projetos">Projetos</a></li>
-                <li class="cabecalho__menu-nav-item"><a href="#contacto">vanesssabonfim@gmail.com</a></li>
+                <li class="borda cabecalho__menu-nav-item"><a href="#sobreMim">Sobre mim</a></li>
+                <li class="borda cabecalho__menu-nav-item"><a href="#skills">Skills</a></li>
+                <li class="borda cabecalho__menu-nav-item"><a href="#hobbies">Hobbies</a></li>
+                <li class="borda cabecalho__menu-nav-item"><a href="#formacoes">Formações</a></li>
+                <li class="borda cabecalho__menu-nav-item"><a href="#projetos">Projetos</a></li>
+                <li class="borda cabecalho__menu-nav-item"><a href="#contacto">vanesssabonfim@gmail.com</a></li>
             </ul>
         </nav>
     </header>
-    <main class="container">
-        <section class="chamada flex flex--column">
+
+    <section class="borda chamada container flex flex--column">
+        <div class=" borda chamada__image-caixa">
             <img class="chamada__image" src="" alt="Foto da Vanessa">
+        </div>
+        <div class="borda chamada__titulo-principal-caixa">
             <h2 class="chamada__titulo-principal">Olá, seja muito bem vindo ao meu Currículo Online!</h2>
+        </div>
+        <div class="borda chamada__titulo-secundario-caixa">
             <h3 class="chamada__titulo-secundario">
                 Sou licenciada em Letras e atualmente estou participar do projeto Oracle ONE
                 na Alura. Fique mais um bocadinho...
             </h3>
-            <nav class="chamada__menu">
-                <ul class="chamada__menu-caixa flex flex--row">
-                    <li class="chamada__menu-item"><a href="">Github<i class="chamada__font-awesome fa-solid fa-arrow-up-right-from-square"></i></a></li>
-                    <li class="chamada__menu-item"><a href="">Linkedin<i class="chamada__font-awesome fa-solid fa-arrow-up-right-from-square"></i></a></li>
-                    <li class="chamada__menu-item"><a href="">Instagram<i class="chamada__font-awesome fa-solid fa-arrow-up-right-from-square"></i></a></li>
-                    <li class="chamada__menu-item"><a href="">Curriculo<i class="chamada__font-awesome fa-solid fa-arrow-up-right-from-square"></i></a></li>
-                </ul>
-            </nav>
-        </section>
-        <section class="sobre-mim">
-            <h2 id="sobreMim">Sobre mim</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper
-                dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut
-                semper sagittis ligula et lacinia.
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper
-                dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut
-                semper sagittis ligula et lacinia. Aenean sit amet felis venenatis, egestas metus vitae, aliquet metus.
-            </p>
-
-            <img src="" alt="">
-        </section>
-        <section class="skill">
-            <h2 id="skills">Skills</h2>
-            <ul>
-                <li><i class=" font-awesome fa-brands fa-html5"></i>HTML 5</li>
-                <li><i class=" font-awesome fa-brands fa-square-js"></i> JavaScript</li>
-                <li><i class=" font-awesome fa-brands fa-php"></i> PHP</li>
-                <li><i class=" font-awesome fa-brands fa-node"></i>Node JS</li>
-                <li><i class=" font-awesome fa-brands fa-react"></i>React</li>
-                <li><i class=" font-awesome fa-brands fa-css3-alt"></i> CSS</li>
-                <li><i class=" font-awesome fa-brands fa-java"></i>Java</li>
+        </div>
+        <nav class="borda chamada__menu flex">
+            <ul class="borda chamada__menu-caixa flex flex--row">
+                <li class="chamada__menu-item"><a href="">Github<i
+                            class="chamada__font-awesome fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                <li class="chamada__menu-item"><a href="">Linkedin<i
+                            class="chamada__font-awesome fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                <li class="chamada__menu-item"><a href="">Instagram<i
+                            class="chamada__font-awesome fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                <li class="chamada__menu-item"><a href="">Curriculo<i
+                            class="chamada__font-awesome fa-solid fa-arrow-up-right-from-square"></i></a></li>
+            </ul>
+        </nav>
+    </section>
+    <section class="borda sobre-mim">
+        <div class=" sobre-mim__caixa container flex flex--column">
+            <div class="sobre-mim__titulo-caixa">
+                <h2 id="sobreMim" class="sobre-mim__titulo">Sobre mim</h2>
+            </div>
+            <div class="sobre-mim__paragrafo-caixa">
+                <p>
+                    Trabalhei por alguns anos na área da Educação e, em paralelo, no Contact Center. Tive minha primeira
+                    oportunidade de crescer na área de Contact Center ao me tornar Supervisora de Equipa.
+                    Após minha mudança de país, trabalhei na area da restauração onde tive minha segunda oportunidade na
+                    área da gestão como Chefe de Turnos.
+                </p>
+                <p>
+                    Estou em mudança de carreira e a procura de oportunidades que
+                    me possibilite aplicar e aprimorar os conhecimentos que adquiri
+                    até o momento para desenvolver minha carreira profissional.
+                    Gostaria de aperfeiçoar minhas noções de trabalho em equipe e
+                    organização e também o desenvolvimento de soluções em
+                    situações críticas.
+                </p>
+            </div>
+            <div class="sobre-mim__image-caixa">
+                <img class="sobre-mim__image" src="./asset/img/signature.png" alt="">
+            </div>
+        </div>
+    </section>
+    <main class="borda container">
+        <section class="borda skill flex">
+            <div class="skill__titulo-caixa">
+                <h2 class="skill__titulo" id="skills">Skills</h2>
+            </div>
+            <ul class="skill__itens-caixa">
+                <li class="skill__item"><i class=" font-awesome fa-brands fa-html5"></i>HTML 5</li>
+                <li class="skill__item"><i class=" font-awesome fa-brands fa-square-js"></i> JavaScript</li>
+                <li class="skill__item"><i class=" font-awesome fa-brands fa-php"></i> PHP</li>
+                <li class="skill__item"><i class=" font-awesome fa-brands fa-node"></i>Node JS</li>
+                <li class="skill__item"><i class=" font-awesome fa-brands fa-react"></i>React</li>
+                <li class="skill__item"><i class=" font-awesome fa-brands fa-css3-alt"></i> CSS</li>
+                <li class="skill__item"><i class=" font-awesome fa-brands fa-java"></i>Java</li>
 
             </ul>
         </section>
-        <section class="Hobby">
+        <section class="borda Hobby">
             <h2 id="hobbies">Hobbies</h2>
             <ul>
                 <li><i class=" font-awesome fa-brands fa-playstation"></i>Jogar games</li>
@@ -89,7 +116,7 @@
                 <li><i class=" font-awesome fa-solid fa-route"></i></i>Viajar</li>
             </ul>
         </section>
-        <section class="formacao">
+        <section class="borda formacao">
             <h2 id="formacoes">Formação Acadêmica</h2>
             <div>
                 <img src="asset/img/facujk.jpg" alt="" width="80">
@@ -107,7 +134,7 @@
                 <p>Em andamento - UFRJ</p>
             </div>
         </section>
-        <section class="experiencia">
+        <section class="borda experiencia">
             <h2 id="projetos">Experiência profissional</h2>
             <div>
                 <img src="asset/img/codif.png" alt="">
@@ -138,7 +165,7 @@
                 <button>Ver demo</button>
             </div>
         </section>
-        <section class="contacto">
+        <section class="borda contacto">
             <div>
                 <img src="asset/img/phoneDesktop.png" alt="" width="80">
             </div>
@@ -167,7 +194,7 @@
         </section>
     </main>
 
-    <footer class="container">
+    <footer class="borda container">
         <div>
             <p>Desenvolvido por Vanessa Bonfim 2023</p>
         </div>

@@ -1,40 +1,40 @@
-/* CABEÇALHO */
+/* CABEÇALHO
+ - titulo
+ - 
+ */
+
 .cabecalho {
     justify-content: space-between;
     align-items: center;
-    padding-top: 0.6rem;
-    padding-bottom: 0.9rem; 
+    margin-top: 0.6rem;
+    margin-bottom: 2rem;
 
 }
-/* .cabecalho__titulo-caixa {
-    width: 50%;
-} */
+.cabecalho__titulo-caixa {
+    width: 40%;
+    align-items: center;
+    gap: 0.2rem;
+}
 .cabecalho__titulo-caixa img {
-    position: absolute;
-    top: 14px;
-    left: 11px;
     width: 1.3rem;
 }
 .cabecalho__titulo {
     color: var(--cor-contraste-escuro);
     font-size: var(--fonte-tamanho-16);
     font-weight: var(--fonte-peso-700);
-    margin-left: 1.1rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.9rem;
 }
-/* .cabecalho__menu-nav-caixa{
-    width: 50%;
+/* CABEÇALHO
+- Menu navegação
+*/
+.cabecalho__menu-nav{
+    width: 60%;
+    justify-content: flex-end;
+}
+/* .cabecalho__menu-nav-caixa {
+
 } */
-.cabecalho__menu-nav-caixa {
-    justify-content: space-between; 
-    padding-top: 0.5rem;
-    padding-bottom: 0.9rem;
-}
 .cabecalho__menu-nav-item {
     display: none;
-    margin-left: 2rem;
-
 }
 .cabecalho__menu-nav-item a{
     font-size: var(--fonte-tamanho-14);
@@ -43,44 +43,80 @@
     text-decoration: none;
 }
 .cabecalho__menu-nav-item:last-child {
-    display: inline-flex;
     font-weight: var(--fonte-peso-400);
-    margin-left: 0;
+    display: block;
 }
 
-/* CHAMADA */
+/* CHAMADA 
+- Imagem
+- apresentação
+- links
+*/
 .chamada{
-    padding-top: 0.9rem;
-    padding-bottom: 1rem;
+    margin-bottom: 1rem;
 }
-.chamada__image {
+.chamada__image-caixa {
     border-radius: 100%;
     border: solid 1px rgb(129, 60, 60);
     height: 98px;
     margin-bottom: 1rem;
     width: 98px;
 }
-.chamada__titulo-principal {
-    font-size: var(--fonte-tamanho-22);
-    font-weight: var(--fonte-peso-700);
+.chamada__titulo-principal-caixa {
     margin-bottom: 1rem;
     
+}
+.chamada__titulo-principal{
+    font-size: var(--fonte-tamanho-22);
+    font-weight: var(--fonte-peso-700);
 }
 .chamada__titulo-secundario{
     font-size: var(--fonte-tamanho-14);
     font-weight: var(--fonte-peso-400);
     margin-bottom: 1rem;
 }
-/* .chamada__menu {
-    
-} */
-/* .chamada__menu-caixa {
-
-} */
+.chamada__menu {
+   width: 100%;
+}
+.chamada__menu-caixa {
+    width: 100%;
+    justify-content: space-between;
+}
 .chamada__menu-item a{
     color: var(--cor-contraste-escuro);
     font-size: var(--fonte-tamanho-14);
     font-weight: var(--fonte-peso-600);
-    margin-right: 0.5rem;
     text-decoration: none;
+}
+
+/*
+SOBRE MIM
+*/
+.sobre-mim {
+background-color: var(--cor-bc-sobremim);
+padding-top: 1rem;
+padding-bottom: 1rem;
+}
+
+/* .sobre-mim__caixa{
+    
+} */
+
+.sobre-mim__titulo-caixa {
+    padding-bottom: 1rem;
+}
+.sobre-mim__titulo {
+    font-size: var(--fonte-tamanho-22);
+    font-weight: var(--fonte-peso-700);
+}
+
+.sobre-mim__paragrafo-caixa {
+    padding-bottom: 1rem;
+}
+.sobre-mim__paragrafo-caixa p {
+    font-size: var(--fonte-tamanho-14);
+    font-weight: var(--fonte-peso-400);
+}
+.sobre-mim__paragrafo-caixa p:first-child {
+    padding-bottom: 1.2rem;
 }

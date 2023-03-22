@@ -2,8 +2,6 @@
 @import url(_variaveis.css);
 
 *{
-	padding: 0;
-	margin: 0;
 	box-sizing: border-box;
 }
 body {
@@ -13,6 +11,9 @@ body {
 	overflow-x: hidden;
 }
 
+.borda{
+	border: solid 1px red;
+}
 .font-awesome {
 	color: var(--cor-primaria);
 	font-size: 2rem;
@@ -28,7 +29,6 @@ body {
 	padding-left: 1rem;
 	width: 100%;
 }
-
 .flex {
 	display: flex;
 }

@@ -1,10 +1,9 @@
 :root {
     --fonte-familia-corpo: 'Raleway', sans-serif;
 
-    --fonte-tamanho-14: 14px;
-    --fonte-tamanho-16: 16px;
-    --fonte-tamanho-22: 22px;
-    --fonte-tamanho-botao: 22px;
+    --fonte-tamanho-14: 0.88rem;
+    --fonte-tamanho-16: 1rem;
+    --fonte-tamanho-22: 1.38rem;
     --fonte-peso-400: 400;
     --fonte-peso-500: 500;
     --fonte-peso-600: 600;
@@ -16,7 +15,10 @@
     --cor-contraste-escuro: #464646;
     --cor-contraste-medio: #A2A2A2;
     --cor-contraste-claro: #fff;
-  
+    
+    --cor-input: #C8C8C8;
+    --cor-bc-sobremim: #EAF2FD;
+
 
     --sombra: 0 5px 10px #55a6ff38;
 }

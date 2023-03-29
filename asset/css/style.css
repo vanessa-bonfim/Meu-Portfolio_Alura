@@ -56,11 +56,14 @@
     margin-bottom: 1rem;
 }
 .chamada__image-caixa {
-    border-radius: 100%;
-    border: solid 1px rgb(129, 60, 60);
     height: 98px;
     margin-bottom: 1rem;
     width: 98px;
+}
+.chamada__image-caixa img{
+    width: 98px;
+    height: 98px;
+    border-radius: 100%;
 }
 .chamada__titulo-principal-caixa {
     margin-bottom: 1rem;
@@ -109,7 +112,6 @@ padding-bottom: 1rem;
     font-size: var(--fonte-tamanho-22);
     font-weight: var(--fonte-peso-700);
 }
-
 .sobre-mim__paragrafo-caixa {
     padding-bottom: 1rem;
 }
@@ -119,4 +121,77 @@ padding-bottom: 1rem;
 }
 .sobre-mim__paragrafo-caixa p:first-child {
     padding-bottom: 1.2rem;
+}
+
+/*
+MAIN - SKILL
+*/
+.skill {
+    padding-bottom: 1rem;
+}
+.skill__titulo-caixa {
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.skill__titulo {
+    font-weight: var(--fonte-peso-700);
+    font-size: var(--fonte-tamanho-22);
+    text-align: center;
+}
+.skill__itens-caixa {
+    width: 100%;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill__item {
+    background-color: var(--cor-contraste-claro);
+    border-radius: 0.1rem;
+    font-weight: var(--fonte-peso-700);
+    font-size: var(--fonte-tamanho-16);
+    padding: 1rem;
+    text-align: left;
+    width: 9rem;
+}
+.skill__item i {
+    margin-right: 5rem;
+    padding-bottom: 0.5rem;
+}
+/*
+MAIN - HOBBBIES
+*/
+.hobby {
+    padding-bottom: 1rem;
+}
+.hobby__titulo-caixa {
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.hobby__titulo {
+    font-weight: var(--fonte-peso-700);
+    font-size: var(--fonte-tamanho-22);
+    text-align: center;
+}
+.hobby__itens-caixa {
+    width: 100%;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.hobby__item {
+    background-color: var(--cor-contraste-claro);
+    border-radius: 0.1rem;
+    font-weight: var(--fonte-peso-700);
+    font-size: var(--fonte-tamanho-16);
+    padding: 1rem;
+    text-align: left;
+    width: 9rem;
+}
+.hobby__item i {
+    margin-right: 5rem;
+    padding-bottom: 0.5rem;
 }

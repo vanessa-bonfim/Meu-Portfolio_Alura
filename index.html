@@ -15,54 +15,57 @@
 </head>
 
 <body>
-    <header class="borda cabecalho container flex">
-        <div class="borda cabecalho__titulo-caixa flex">
-            <div class="borda cabecalho__titulo-item">
+    <header class="cabecalho container flex">
+        <div class="cabecalho__titulo-caixa flex">
+            <div class="cabecalho__titulo-item">
                 <img src="asset/img/stars.svg" alt="Estrelas">
             </div>
-            <div class="borda cabecalho__titulo-item">
+            <div class="cabecalho__titulo-item">
                 <h1 class="cabecalho__titulo">Vanessa Bonfim</h1>
             </div>
         </div>
-        <nav class="borda cabecalho__menu-nav flex">
+        <nav class="cabecalho__menu-nav flex">
             <ul class="cabecalho__menu-nav-caixa flex">
-                <li class="borda cabecalho__menu-nav-item"><a href="#sobreMim">Sobre mim</a></li>
-                <li class="borda cabecalho__menu-nav-item"><a href="#skills">Skills</a></li>
-                <li class="borda cabecalho__menu-nav-item"><a href="#hobbies">Hobbies</a></li>
-                <li class="borda cabecalho__menu-nav-item"><a href="#formacoes">Formações</a></li>
-                <li class="borda cabecalho__menu-nav-item"><a href="#projetos">Projetos</a></li>
-                <li class="borda cabecalho__menu-nav-item"><a href="#contacto">vanesssabonfim@gmail.com</a></li>
+                <li class="cabecalho__menu-nav-item"><a href="#sobreMim">Sobre mim</a></li>
+                <li class="cabecalho__menu-nav-item"><a href="#skills">Skills</a></li>
+                <li class="cabecalho__menu-nav-item"><a href="#hobbies">Hobbies</a></li>
+                <li class="cabecalho__menu-nav-item"><a href="#formacoes">Formações</a></li>
+                <li class="cabecalho__menu-nav-item"><a href="#projetos">Projetos</a></li>
+                <li class="cabecalho__menu-nav-item"><a href="#contacto">vanesssabonfim@gmail.com</a></li>
             </ul>
         </nav>
     </header>
-
-    <section class="borda chamada container flex flex--column">
-        <div class=" borda chamada__image-caixa">
-            <img class="chamada__image" src="" alt="Foto da Vanessa">
+    <section class="chamada container flex flex--column">
+        <div class=" chamada__image-caixa">
+            <img class="chamada__image" src="./asset/img/perfil-image.jpg" alt="Foto da Vanessa">
         </div>
-        <div class="borda chamada__titulo-principal-caixa">
+        <div class="chamada__titulo-principal-caixa">
             <h2 class="chamada__titulo-principal">Olá, seja muito bem vindo ao meu Currículo Online!</h2>
         </div>
-        <div class="borda chamada__titulo-secundario-caixa">
+        <div class="chamada__titulo-secundario-caixa">
             <h3 class="chamada__titulo-secundario">
                 Sou licenciada em Letras e atualmente estou participar do projeto Oracle ONE
                 na Alura. Fique mais um bocadinho...
             </h3>
         </div>
-        <nav class="borda chamada__menu flex">
-            <ul class="borda chamada__menu-caixa flex flex--row">
-                <li class="chamada__menu-item"><a href="">Github<i
-                            class="chamada__font-awesome fa-solid fa-arrow-up-right-from-square"></i></a></li>
-                <li class="chamada__menu-item"><a href="">Linkedin<i
-                            class="chamada__font-awesome fa-solid fa-arrow-up-right-from-square"></i></a></li>
-                <li class="chamada__menu-item"><a href="">Instagram<i
-                            class="chamada__font-awesome fa-solid fa-arrow-up-right-from-square"></i></a></li>
-                <li class="chamada__menu-item"><a href="">Curriculo<i
-                            class="chamada__font-awesome fa-solid fa-arrow-up-right-from-square"></i></a></li>
+        <nav class="chamada__menu flex">
+            <ul class="chamada__menu-caixa flex flex--row">
+                <li class="chamada__menu-item">
+                    <a href="">Github<i class="chamada__font-awesome fa-solid fa-arrow-up-right-from-square"></i></a>
+                </li>
+                <li class="chamada__menu-item">
+                    <a href="">Linkedin<i class="chamada__font-awesome fa-solid fa-arrow-up-right-from-square"></i></a>
+                </li>
+                <li class="chamada__menu-item">
+                    <a href="">Instagram<i class="chamada__font-awesome fa-solid fa-arrow-up-right-from-square"></i></a>
+                </li>
+                <li class="chamada__menu-item">
+                    <a href="">Curriculo<i class="chamada__font-awesome fa-solid fa-arrow-up-right-from-square"></i></a>
+                </li>
             </ul>
         </nav>
     </section>
-    <section class="borda sobre-mim">
+    <section class="sobre-mim">
         <div class=" sobre-mim__caixa container flex flex--column">
             <div class="sobre-mim__titulo-caixa">
                 <h2 id="sobreMim" class="sobre-mim__titulo">Sobre mim</h2>
@@ -88,36 +91,66 @@
             </div>
         </div>
     </section>
-    <main class="borda container">
-        <section class="borda skill flex">
+    <main class="container">
+        <section class="skill">
             <div class="skill__titulo-caixa">
                 <h2 class="skill__titulo" id="skills">Skills</h2>
             </div>
-            <ul class="skill__itens-caixa">
-                <li class="skill__item"><i class=" font-awesome fa-brands fa-html5"></i>HTML 5</li>
-                <li class="skill__item"><i class=" font-awesome fa-brands fa-square-js"></i> JavaScript</li>
-                <li class="skill__item"><i class=" font-awesome fa-brands fa-php"></i> PHP</li>
-                <li class="skill__item"><i class=" font-awesome fa-brands fa-node"></i>Node JS</li>
-                <li class="skill__item"><i class=" font-awesome fa-brands fa-react"></i>React</li>
-                <li class="skill__item"><i class=" font-awesome fa-brands fa-css3-alt"></i> CSS</li>
-                <li class="skill__item"><i class=" font-awesome fa-brands fa-java"></i>Java</li>
+            <ul class="skill__itens-caixa flex flex--wrap">
+                <li class="skill__item">
+                    <i class="font-awesome fa-brands fa-html5"></i> HTML 5
+                </li>
+                <li class="skill__item">
+                    <i class="font-awesome fa-brands fa-square-js"></i> JavaScript
+                </li>
+                <li class="skill__item">
+                    <i class="font-awesome fa-brands fa-php"></i> PHP
+                </li>
+                <li class="skill__item">
+                    <i class="font-awesome fa-brands fa-node"></i> Node JS
+                </li>
+                <li class="skill__item">
+                    <i class="font-awesome fa-brands fa-react"></i> React
+                </li>
+                <li class="skill__item">
+                    <i class="font-awesome fa-brands fa-css3-alt"></i> CSS
+                </li>
+                <li class="skill__item">
+                    <i class="font-awesome fa-brands fa-java"></i> Java
+                </li>
 
             </ul>
         </section>
-        <section class="borda Hobby">
-            <h2 id="hobbies">Hobbies</h2>
-            <ul>
-                <li><i class=" font-awesome fa-brands fa-playstation"></i>Jogar games</li>
-                <li><i class=" font-awesome fa-solid fa-book"></i>Ler livros</li>
-                <li><i class=" font-awesome fa-solid fa-headphones"></i>Ouvir musica</li>
-                <li><i class=" font-awesome fa-solid fa-tv"></i>Assistir séries</li>
-                <li><i class=" font-awesome fa-solid fa-utensils"></i></i>Experimentar comidas diferentes</li>
-                <li><i class=" font-awesome fa-solid fa-camera-retro"></i>Tirar fotos de paisagens</li>
-                <li><i class=" font-awesome fa-solid fa-route"></i></i>Viajar</li>
+        <section class="hobby">
+            <div class="hobby__titulo-caixa">
+                <h2 class="hobby__titulo" id="hobbies">Hobbies</h2>
+            </div>
+            <ul class="hobby__itens-caixa flex flex--wrap">
+                <li class="hobby__item">
+                    <i class="font-awesome fa-brands fa-playstation"></i>Jogar games
+                </li>
+                <li class="hobby__item">
+                    <i class="font-awesome fa-solid fa-book"></i>Ler livros
+                </li>
+                <li class="hobby__item">
+                    <i class="font-awesome fa-solid fa-headphones"></i>Ouvir musica
+                </li>
+                <li class="hobby__item">
+                    <i class="font-awesome fa-solid fa-tv"></i>Assistir séries
+                </li>
+                <li class="hobby__item">
+                    <i class="font-awesome fa-solid fa-utensils"></i></i>Comidas diferentes
+                </li>
+                <li class="hobby__item">
+                    <i class="font-awesome fa-solid fa-camera-retro"></i>Tirar fotos de paisagens
+                </li>
+                <li class="hobby__item">
+                    <i class="font-awesome fa-solid fa-route"></i></i>Viajar
+                </li>
             </ul>
         </section>
         <section class="borda formacao">
-            <h2 id="formacoes">Formação Acadêmica</h2>
+            <div><h2 id="formacoes">Formação Acadêmica</h2></div>
             <div>
                 <img src="asset/img/facujk.jpg" alt="" width="80">
                 <h3>Análise de dados</h3>

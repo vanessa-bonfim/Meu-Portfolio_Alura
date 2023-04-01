@@ -17,8 +17,9 @@
     --cor-contraste-claro: #fff;
     
     --cor-input: #C8C8C8;
-    --cor-bc-sobremim: #EAF2FD;
-
+    --cor-bc-azul: #EAF2FD;
+    --cor-hover-claro: #D4E4FA;
+    --cor-hover-escuro: #5595E9;
 
     --sombra: 0 5px 10px #55a6ff38;
 }

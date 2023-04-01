@@ -8,7 +8,6 @@
     align-items: center;
     margin-top: 0.6rem;
     margin-bottom: 2rem;
-
 }
 .cabecalho__titulo-caixa {
     width: 40%;
@@ -93,10 +92,10 @@
 }
 
 /*
-SOBRE MIM
+MAIN - SOBRE MIM
 */
 .sobre-mim {
-background-color: var(--cor-bc-sobremim);
+background-color: var(--cor-bc-azul);
 padding-top: 1rem;
 padding-bottom: 1rem;
 }
@@ -133,7 +132,6 @@ MAIN - SKILL
     margin-top: 1rem;
     padding-bottom: 1rem;
 }
-
 .skill__titulo {
     font-weight: var(--fonte-peso-700);
     font-size: var(--fonte-tamanho-22);
@@ -145,15 +143,15 @@ MAIN - SKILL
     justify-content: center;
     align-items: center;
 }
-
 .skill__item {
     background-color: var(--cor-contraste-claro);
     border-radius: 0.1rem;
     font-weight: var(--fonte-peso-700);
     font-size: var(--fonte-tamanho-16);
-    padding: 1rem;
+    padding: 3rem 1rem 1rem;
     text-align: left;
     width: 9rem;
+    height: 8rem;
 }
 .skill__item i {
     margin-right: 5rem;
@@ -169,7 +167,6 @@ MAIN - HOBBBIES
     margin-top: 1rem;
     padding-bottom: 1rem;
 }
-
 .hobby__titulo {
     font-weight: var(--fonte-peso-700);
     font-size: var(--fonte-tamanho-22);
@@ -181,17 +178,131 @@ MAIN - HOBBBIES
     justify-content: center;
     align-items: center;
 }
-
 .hobby__item {
     background-color: var(--cor-contraste-claro);
     border-radius: 0.1rem;
     font-weight: var(--fonte-peso-700);
     font-size: var(--fonte-tamanho-16);
-    padding: 1rem;
+    padding: 3rem 1rem 1rem;
     text-align: left;
     width: 9rem;
+    height: 8rem;
 }
 .hobby__item i {
     margin-right: 5rem;
     padding-bottom: 0.5rem;
+}
+/* 
+* MAIN - Formação
+*/
+
+.formacao {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: var(--cor-bc-azul);
+}
+.formacao__titulo-caixa {
+    padding-bottom: 2rem;
+}
+.formacao__titulo {
+    font-weight: var(--fonte-peso-700);
+    font-size: var(--fonte-tamanho-22);
+    text-align: center;
+}
+
+/* .formacao__itens-caixa {
+   padding-bottom: 1rem;
+} */
+
+.formacao__formacoes .formacao__itens-caixa:last-child{
+padding-bottom: 0;
+}
+.formacao__formacoes {
+    justify-content: space-around;
+    gap: 1rem;
+}
+.formacao__caixa-image {
+    width: 20.2rem;
+    height: 7rem;
+    background-color: var(--cor-contraste-claro);
+    padding: 0.9rem 7.4rem;
+}
+.formacao__item-titulo {
+    font-weight: var(--fonte-peso-700);
+    font-size: var(--fonte-tamanho-16);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.formacao__item-paragrafo{
+    font-weight: var(--fonte-peso-500);
+    font-size: var(--fonte-tamanho-14);  
+}
+
+
+/*
+*MAIN -Experiências
+*/
+.experiencia__titulo-caixa {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+.experiencia__titulo {
+    font-weight: var(--fonte-peso-700);
+    font-size: var(--fonte-tamanho-22);
+    text-align: center;
+}
+.experiencia__itens-caixa {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 4rem;
+}
+.experiencia__caixas .experiencia__itens-caixa:last-child {
+    padding-bottom: 2rem;
+}
+/* .experiencia__item-caixa-image {
+padding-bottom: 1rem;
+} */
+.experiencia__item-image {
+    width: 100%;
+}
+.experiencia__item-descricao-titulo {
+    font-weight: var(--fonte-peso-700);
+    font-size: var(--fonte-tamanho-16);
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+}
+.experiencia__item-descricao-paragrafo {
+    font-weight: var(--fonte-peso-500);
+    font-size: var(--fonte-tamanho-14);
+    padding-bottom: 0.5rem;
+}
+.experiencia__botao {
+    padding: 0.8rem 1rem;
+}
+.experiencia__botao-repositorio {
+    font-weight: var(--fonte-peso-600);
+    font-size: var(--fonte-tamanho-16);
+    background-color: var(--cor-secundaria);
+    border: solid 1px var(--cor-primaria);
+}
+.experiencia__botao-repositorio a {
+    color: var(--cor-primaria);
+    text-decoration: none;
+}
+.experiencia__botao-repositorio:hover {
+        background-color: var(--cor-hover-claro);
+        cursor: pointer;
+}
+.experiencia__botao-demo {
+    font-weight: var(--fonte-peso-600);
+    font-size: var(--fonte-tamanho-16);
+    color: var(--cor-contraste-claro);
+    background-color: var(--cor-primaria);
+    border: solid 1px var(--cor-primaria);
+    margin-left: 1rem;
+}
+.experiencia__botao-demo:hover {
+    background-color: var(--cor-hover-escuro);
+    cursor: pointer;
 }

@@ -9,7 +9,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="./asset/css/base/_reset.css">
+    <link rel="stylesheet" href="./asset/css/base/_variaveis.css">
     <link rel="stylesheet" href="./asset/css/base/base.css">
     <link rel="stylesheet" href="./asset/css/style.css">
 </head>
@@ -121,7 +123,9 @@
                     <li class="skill__item">
                         <i class="font-awesome fa-brands fa-java"></i> Java
                     </li>
-
+                    <li class="skill__item">
+                        <i class="font-awesome fa-solid fa-database"></i> SQL
+                    </li>
                 </ul>
             </div>
         </section>
@@ -151,6 +155,9 @@
                     </li>
                     <li class="hobby__item">
                         <i class="font-awesome fa-solid fa-route"></i>Viajar
+                    </li>
+                    <li class="hobby__item">
+                        <i class="font-awesome fa-solid fa-building-columns"></i>Museus
                     </li>
                 </ul>
             </div>
@@ -201,8 +208,9 @@
                         <div class="experiencia__item-descricao">
                             <h3 class="experiencia__item-descricao-titulo">Decodificador de texto</h3>
                             <p class="experiencia__item-descricao-paragrafo">Challenge Alura Codificador</p>
-                            <button class="experiencia__botao experiencia__botao-repositorio"><a href="#">Repositório</a></button>
-                            <button class="experiencia__botao experiencia__botao-demo"><a href="#"></a>Ver demo</button>
+                            <button class="experiencia__botao experiencia__botao-repositorio"><a
+                                    href="#">Repositório</a></button>
+                            <button class="experiencia__botao experiencia__botao-demo"><a href="#">Ver demo</a></button>
                         </div>
                     </div>
                     <div class="experiencia__itens-caixa">
@@ -212,8 +220,9 @@
                         <div class="experiencia__item-descricao">
                             <h3 class="experiencia__item-descricao-titulo">Jogo criado com HTML, CSS e JavaScript</h3>
                             <p class="experiencia__item-descricao-paragrafo">Challenge Oracle</p>
-                            <button class="experiencia__botao experiencia__botao-repositorio"><a href="#">Repositório</a></button>
-                            <button class="experiencia__botao experiencia__botao-demo"><a href="#"></a>Ver demo</button>
+                            <button class="experiencia__botao experiencia__botao-repositorio"><a
+                                    href="#">Repositório</a></button>
+                            <button class="experiencia__botao experiencia__botao-demo"><a href="#">Ver demo</a></button>
                         </div>
                     </div>
                     <div class="experiencia__itens-caixa">
@@ -223,8 +232,9 @@
                         <div class="experiencia__item-descricao">
                             <h3 class="experiencia__item-descricao-titulo">Decodificador de texto</h3>
                             <p class="experiencia__item-descricao-paragrafo">Challenge Alura Codificador</p>
-                            <button class="experiencia__botao experiencia__botao-repositorio"><a href="#">Repositório</a></button>
-                            <button class="experiencia__botao experiencia__botao-demo"><a href="#"></a>Ver demo</button>
+                            <button class="experiencia__botao experiencia__botao-repositorio"><a
+                                    href="#">Repositório</a></button>
+                            <button class="experiencia__botao experiencia__botao-demo"><a href="#">Ver demo</a></button>
                         </div>
                     </div>
                     <div class="experiencia__itens-caixa">
@@ -234,47 +244,62 @@
                         <div class="experiencia__item-descricao">
                             <h3 class="experiencia__item-descricao-titulo">Jogo criado com HTML e JavaScript</h3>
                             <p class="experiencia__item-descricao-paragrafo">Challenge Oracle</p>
-                            <button class="experiencia__botao experiencia__botao-repositorio"><a href="#">Repositório</a></button>
-                            <button class="experiencia__botao experiencia__botao-demo"><a href="#"></a>Ver demo</button>
+                            <button class="experiencia__botao experiencia__botao-repositorio"><a
+                                    href="#">Repositório</a></button>
+                            <button class="experiencia__botao experiencia__botao-demo"><a href="#">Ver demo</a></button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="borda contacto">
-            <div>
-                <img src="asset/img/phoneDesktop.png" alt="" width="80">
+        <section class="contacto">
+            <div class="container contacto__caixas">
+                <div class="contacto__image-caixa">
+                    <img src="asset/img/phoneDesktop.png" alt="" width="80">
+                </div>
+                <div class="contacto__formulario-caixa">
+                    <h2 class="contacto__formulario-titulo" id="contacto">Contacto</h2>
+                    <p class="contacto__formulario-paragrafo">Quer entrar em contato comigo?</p>
+                    <p class="contacto__formulario-paragrafo">Preencha o formulário ao lado e entrarei em contato o mais
+                        rápido possível.</p>
+                    <form action="" class="formulario flex flex--column">
+                        <fieldset>
+                            <div class="input-container">
+                                <input class="input" name="nome" id="nome" type="text" placeholder="Nome" required data-nome>
+                                <label class="input-label" for="nome">Nome</label>
+                                <span class="input-mensagem-erro">Este campo não está válido!</span>
+                            </div>
+                            <div class="input-container">
+                                <input class="input" name="email" id="email" type="email" placeholder="Email" required data-email>
+                                <label class="input-label" for="email">E-mail</label>
+                                <span class="input-mensagem-erro">Este campo não está válido!</span>
+                            </div>
+                            <div class="input-container">
+                                <input class="input" name="assunto" id="assunto" type="text" placeholder="Assunto"
+                                    required data-assunto>
+                                <label class="input-label" for="assunto">Assunto</label>
+                                <span class="input-mensagem-erro">Este campo não está válido!</span>
+                            </div>
+                            <div class="input-container">
+                                <textarea class="textarea" name="texto" id="texto" type="text"
+                                    placeholder="Mensagem" required data-texto></textarea>
+                                <label class="textarea-label" for="texto">Mensagem</label>
+                                <span class="input-mensagem-erro">Este campo não está válido!</span>
+                            </div>
+                        </fieldset>
+                        <button type="submit" class="formulario__botao">Enviar mensagem</button>
+                    </form>
+                </div>
             </div>
-            <h2 id="contacto">Contacto</h2>
-            <p>Quer entrar em contato comigo? Preencha o formulário ao lado e entrarei em contato o mais rápido
-                possível.</p>
-            <form action="">
-                <fieldset>
-                    <div>
-                        <input name="nome" id="nome" type="text" placeholder="Nome" required>
-                        <label for="nome">Nome</label>
-                        <span>Este campo não está válido!</span>
-                    </div>
-                    <div>
-                        <input name="email" id="email" type="email" placeholder="Email" required>
-                        <label for="email">Email</label>
-                        <span>Este campo não está válido!</span>
-                    </div>
-                    <div>
-                        <input name="assunto" id="assunto" type="text" placeholder="Assunto" required>
-                        <label for="assunto">Assunto</label>
-                        <span>Este campo não está válido!</span>
-                    </div>
-                </fieldset>
-            </form>
         </section>
     </main>
-
-    <footer class="borda container">
-        <div>
-            <p>Desenvolvido por Vanessa Bonfim 2023</p>
+    <footer class="rodape flex flex--center flex--column">
+        <div class="rodape__caixa">
+            <p class="rodape__paragrafo">Desenvolvido por Vanessa Bonfim</p>
+            <p class="rodape__paragrafo">2023</p>
         </div>
     </footer>
+    <script type="module" src="./js/app.js"></script>
 </body>
 
 </html>

@@ -1,6 +1,6 @@
 :root {
     --fonte-familia-corpo: 'Raleway', sans-serif;
-
+    --fonte-tamanho-12:0.75rem;
     --fonte-tamanho-14: 0.88rem;
     --fonte-tamanho-16: 1rem;
     --fonte-tamanho-22: 1.38rem;
@@ -20,6 +20,7 @@
     --cor-bc-azul: #EAF2FD;
     --cor-hover-claro: #D4E4FA;
     --cor-hover-escuro: #5595E9;
+    --cor-aviso: #ec6b6b;
 
     --sombra: 0 5px 10px #55a6ff38;
 }

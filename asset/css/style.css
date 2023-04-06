@@ -474,34 +474,6 @@ MAIN
     transition: all .25s;
 }
 
-.input-container--invalido {
-    margin-bottom: 0.5rem;
-}
-
-.input-container--invalido .input,
-.textarea {
-    border: 1px solid var(--cor-aviso);
-    border-radius: 7px;
-}
-
-.input-container--invalido .input-label,
-.textarea-label {
-    color: var(--cor-aviso);
-}
-
-.input-mensagem-erro {
-    display: none;
-}
-
-.input-container--invalido .input-mensagem-erro {
-    color: var(--cor-aviso);
-    display: block;
-    font-size: var(--fonte-tamanho-14);
-    font-weight: var(--fonte-peso-500);
-    margin-top: 0.5rem;
-    padding-left: 0.5rem;
-}
-
 .textarea {
     background-color: var(--cor-contraste-claro);
     border: none;
@@ -551,6 +523,45 @@ MAIN
     font-size: 0.875rem;
     top: 0.25rem;
     transition: all 0.25s;
+}
+
+/*
+* Avisos Formulário
+*/
+
+.input-container--invalido {
+    margin-bottom: 0.5rem;
+}
+
+.input-container--invalido .input {
+    border: 1px solid var(--cor-aviso);
+    border-radius: 7px;
+}
+
+.input-container--invalido .textarea {
+    border: 1px solid var(--cor-aviso);
+    border-radius: 7px;
+}
+
+.input-container--invalido .input-label {
+    color: var(--cor-aviso);
+}
+
+.input-container--invalido .textarea-label {
+    color: var(--cor-aviso);
+}
+
+.input-container--invalido .input-mensagem-erro {
+    color: var(--cor-aviso);
+    display: block;
+    font-size: var(--fonte-tamanho-14);
+    font-weight: var(--fonte-peso-500);
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+.input-mensagem-erro {
+    display: none;
 }
 
 .formulario__botao {

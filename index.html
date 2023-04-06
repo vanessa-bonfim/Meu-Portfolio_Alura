@@ -10,8 +10,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <link rel="stylesheet" href="./asset/css/base/reset.css">
-    <link rel="stylesheet" href="./asset/css/base/variaveis.css">
     <link rel="stylesheet" href="./asset/css/base/base.css">
     <link rel="stylesheet" href="./asset/css/style.css">
 </head>
@@ -265,25 +263,25 @@
                     <form action="" class="formulario flex flex--column">
                         <fieldset>
                             <div class="input-container">
-                                <input class="input" name="nome" id="nome" type="text" placeholder="Nome" required data-nome>
+                                <input class="input" name="nome" id="nome" type="text" placeholder="Nome" required data-tipo="nome">
                                 <label class="input-label" for="nome">Nome</label>
                                 <span class="input-mensagem-erro">Este campo não está válido!</span>
                             </div>
                             <div class="input-container">
-                                <input class="input" name="email" id="email" type="email" placeholder="Email" required data-email>
+                                <input class="input" name="email" id="email" type="email" placeholder="Email" required data-tipo="email">
                                 <label class="input-label" for="email">E-mail</label>
                                 <span class="input-mensagem-erro">Este campo não está válido!</span>
                             </div>
                             <div class="input-container">
                                 <input class="input" name="assunto" id="assunto" type="text" placeholder="Assunto"
-                                    required data-assunto>
+                                    required data-tipo="assunto">
                                 <label class="input-label" for="assunto">Assunto</label>
                                 <span class="input-mensagem-erro">Este campo não está válido!</span>
                             </div>
                             <div class="input-container">
                                 <textarea class="textarea" name="texto" id="texto" type="text"
-                                    placeholder="Mensagem" required data-texto></textarea>
-                                <label class="textarea-label" for="texto">Mensagem</label>
+                                    placeholder="Mensagem" required data-tipo="texto"></textarea>
+                                <label class="textarea-label" for="texto" data-tipo="textareaLabel">Mensagem</label>
                                 <span class="input-mensagem-erro">Este campo não está válido!</span>
                             </div>
                         </fieldset>

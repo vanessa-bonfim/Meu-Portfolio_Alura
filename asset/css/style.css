@@ -1,3 +1,154 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/**
+Variaveis
+*/
+:root {
+    --fonte-familia-corpo: 'Raleway', sans-serif;
+    --fonte-tamanho-12:0.75rem;
+    --fonte-tamanho-14: 0.88rem;
+    --fonte-tamanho-16: 1rem;
+    --fonte-tamanho-22: 1.38rem;
+    --fonte-tamanho-32: 2rem;
+    --fonte-tamanho-52: 3.25rem;
+    --fonte-peso-400: 400;
+    --fonte-peso-500: 500;
+    --fonte-peso-600: 600;
+    --fonte-peso-700: 700;
+
+    
+    --cor-primaria: #2A7AE4;
+    --cor-secundaria: #E5E5E5;
+    --cor-contraste-escuro: #464646;
+    --cor-contraste-medio: #A2A2A2;
+    --cor-contraste-claro: #fff;
+    
+    --cor-input: #C8C8C8;
+    --cor-bc-azul: #EAF2FD;
+    --cor-hover-claro: #D4E4FA;
+    --cor-hover-escuro: #5595E9;
+    --cor-aviso: #ec6b6b;
+
+    --sombra: 0 5px 10px #55a6ff38;
+}
+
+/* *
+Base
+ */
+ 
+ *{
+	box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor-secundaria);
+	color: var(--cor-contraste-escuro);
+	font-family: var(--fonte-familia-corpo);
+	overflow-x: hidden;
+	
+}
+
+.borda{
+	border: solid 1px red;
+}
+.font-awesome {
+	color: var(--cor-primaria);
+	font-size: 2rem;
+}
+.chamada__font-awesome {
+	color: var(--cor-contraste-escuro);
+	font-size: 0.8rem;
+	margin-left: 0.2rem;
+}
+
+.container {
+	padding-right: 1rem;
+	padding-left: 1rem;
+	width: 100%;
+}
+.flex {
+	display: flex;
+}
+
+.flex--center {
+	align-items: center;
+	justify-content: center;
+}
+
+.flex--column {
+	flex-direction: column;
+}
+.flex--row {
+	flex-direction: row;
+}
+.flex--wrap {
+	flex-wrap: wrap;
+}
+
+@media (min-width: 650px) {
+	.container {
+		padding-right: 2rem;
+		padding-left: 2rem;
+
+	}
+	
+}
+
+@media (min-width: 992px) {
+	.container {
+		padding-left: 9.5rem;
+		padding-right: 9.5rem;
+	}
+}
+
 /* CABEÇALHO
  - titulo
  - 
@@ -61,19 +212,23 @@ CABEÇALHO
 - links
 */
 .chamada {
-    margin-bottom: 1rem;
+    padding-bottom: 1rem;
 }
 
 .chamada__image-caixa {
     height: 98px;
     margin-bottom: 1rem;
-    /* width: 98px; */
+    
 }
 
 .chamada__image-caixa img {
     width: 98px;
     height: 98px;
     border-radius: 100%;
+}
+
+.chamada__caixa-itens {
+    text-align: left;
 }
 
 .chamada__titulo-principal-caixa {
@@ -420,7 +575,7 @@ MAIN
 }
 
 .input-container {
-    padding-bottom: 2rem;
+    padding-bottom: 1.3rem;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -575,6 +730,11 @@ MAIN
     width: 9.8rem;
 }
 
+.formulario__botao:hover {
+    background-color: var(--cor-hover-escuro);
+    cursor: pointer;
+}
+
 /*
 FOOTER -
 Rodapé
@@ -607,16 +767,22 @@ Rodapé
         justify-content: space-between;
         gap: 2rem;
         padding-top: 1rem;
+        margin-bottom: 1rem;
     }
 
     .chamada__caixa-item {
         width: 25%;
+    } 
+
+    .chamada__image-caixa {
+        width: 30%;
+        margin: 0;
     }
 
     .chamada__image-caixa,
     .chamada__image-caixa img {
-        height: 146px;
-        width: 100%;
+        height: 180px;
+        width: 175px;
         margin: 0;
     }
 
@@ -626,9 +792,11 @@ Rodapé
     }
 
     .chamada__caixa-itens {
-        width: 75%;
+        justify-content: center;
+        width: 70%;
         max-width: 751px;
     }
+
     .chamada__titulo-principal {
         font-size: var(--fonte-tamanho-32);
     }
@@ -705,6 +873,7 @@ Rodapé
     .chamada__image-caixa,
     .chamada__image-caixa img {
         height: 250px;
+    width: 250px;
     }
 
     .chamada__titulo-principal {
@@ -715,13 +884,16 @@ Rodapé
         font-size: var(--fonte-tamanho-22);
         margin-bottom: 1.38rem;
     }
+
     .sobre-mim {
         padding-top: 4rem;
         padding-bottom: 4rem;
     }
+
     .sobre-mim__caixa {
         width: 80%;
     }
+
     .sobre-mim__titulo {
         font-size: var(--fonte-tamanho-32);
     }
@@ -742,82 +914,142 @@ Rodapé
         width: 11rem;
         height: 11rem;
     }
+
     .formacao {
         padding-top: 5.13rem;
         padding-bottom: 5.13rem;
     }
+
     .formacao__formacoes {
         gap: 0.5rem;
     }
+
     .formacao__caixa-image {
         width: 19.2rem;
         height: 17.38rem;
         padding: 4rem 4rem 4rem 4rem;
     }
+
     .formacao__item-image {
         width: 175px;
         height: 130px;
     }
+
     .formacao__item-titulo {
         font-size: var(--fonte-tamanho-22);
     }
+
     .formacao__item-paragrafo {
         font-size: var(--fonte-tamanho-16);
     }
-    .experiencia__titulo-caixa{
+
+    .experiencia__titulo-caixa {
         padding-bottom: 2rem;
     }
+
     .experiencia__titulo {
         font-size: var(--fonte-tamanho-32);
-        
+
     }
+
+    .experiencia__itens-caixa {
+        padding-bottom: 3.35rem;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
     .experiencia__itens-caixa {
         flex-direction: row;
         align-content: space-between;
         align-items: center;
     }
-    .experiencia__item-caixa-image{
-        width: 70%;
+
+    .experiencia__item-caixa-image {
+        width: 60%;
     }
+
     .experiencia__item-descricao {
-        width: 30%;
+        width: 40%;
     }
+
     .experiencia__item-descricao-titulo {
         font-size: var(--fonte-tamanho-22);
     }
+
     .experiencia__item-descricao-paragrafo {
         font-size: var(--fonte-tamanho-16);
     }
+
     .experiencia__botao-repositorio {
         font-weight: var(--fonte-peso-400);
     }
+
     .experiencia__botao-demo {
         font-weight: var(--fonte-peso-400);
     }
+
     .experiencia__itens-caixa:nth-child(even) {
         flex-direction: row-reverse;
     }
+
     .experiencia__itens-caixa:nth-child(even) .experiencia__item-descricao {
         padding-right: 1.5rem;
     }
+
     .experiencia__itens-caixa:nth-child(odd) .experiencia__item-descricao {
         padding-left: 1.5rem;
-    } 
+    }
+
     .contacto {
         padding-top: 8.2rem;
         padding-bottom: 4.1rem;
     }
-    .contacto__image-caixa {
-       display: block;
-        width: 50%;
+
+    .contacto__caixa {
+        justify-content: space-between;
     }
+
+    .contacto__image-caixa {
+        display: flex;
+    }
+
     .contacto__image {
         width: 100%;
     }
+
     .contacto__formulario-caixa {
-        width: 50%;
+        width: 90%;
+        padding-right: 0;
     }
+
     .contacto__formulario-titulo {
         font-size: var(--fonte-tamanho-32);
+    }
+
+    .formulario__botao {
+        font-weight: var(--fonte-peso-400);
+        font-size: var(--fonte-tamanho-16);
+        width: 165px;
+    }
+    .input-container--invalido .input-mensagem-erro {
+        font-size: var(--fonte-tamanho-16);
+    }
+}
+@media (min-width: 1130px) {
+    .cabecalho__titulo-caixa img {
+        width: 2rem;
+    }
+    .cabecalho__menu-nav-caixa .cabecalho__menu-nav-item a, .cabecalho__menu-nav-caixa .cabecalho__menu-nav-item a {
+        font-size: 18px;
+    }
+    .cabecalho__titulo {
+        font-size: 18px;
+    }
+    .chamada__image-caixa, .chamada__image-caixa img {
+        height: 260px;
+        width: 260px;
+    }
+    .cabecalho__menu-nav-item {
+        padding: 1rem;
     }
 }

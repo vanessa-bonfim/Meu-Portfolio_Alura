@@ -5,22 +5,28 @@ dataNascimento.addEventListener('blur', (evento) =>{ // Quando se perde o foco d
 })
  */
 
+const inputs = document.querySelectorAll('[data-tipo]');
+
+/* document.querySelector('.formulario').addEventListener('submit', (evento)=> {
+    evento.preventDefault()
+    let tt = erro;
+    debugger;
+}) */
+
+inputs.forEach(input => {    
+    input.addEventListener('blur', (evento) => {
+        valida(evento.target)
+    })
+})
 //Podemos acessar um data-atributes do input com dataset depois diz qual atribute.
 
-export function valida(input) {
+function valida(input) {
 
     const tipoDeInput = input.dataset.tipo
 
     if (validadores[tipoDeInput]) {
         validadores[tipoDeInput](input)
     }
-
-   /*  if (input.value.length >= 186) {
-        const label = document.querySelector(`label[for="${input.id}"]`);
-        if (label) {
-            label.style.display = "none";
-        }
-    } */
 
     if (input.validity.valid) {
         input.parentElement.classList.remove('input-container--invalido')
@@ -63,6 +69,7 @@ const validadores = {
     assunto: input => validaAssunto(input),
     texto: input => validaTexto(input)
 }
+const erros = {}
 
 function mostraMensagemDeErro(tipoDeInput, input) {
     let mensagem = '';

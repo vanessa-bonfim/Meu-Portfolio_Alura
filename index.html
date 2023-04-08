@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./asset/css/base/base.css">
     <link rel="stylesheet" href="./asset/css/style.css">
 </head>
@@ -36,34 +36,42 @@
         </nav>
     </header>
     <section class="chamada container flex flex--column">
-        <div class=" chamada__image-caixa">
-            <img class="chamada__image" src="./asset/img/perfil-image.jpg" alt="Foto da Vanessa">
+        <div class="chamada__caixa-item">
+            <div class=" chamada__image-caixa">
+                <img class="chamada__image" src="./asset/img/perfil-image.jpg" alt="Foto da Vanessa">
+            </div>
         </div>
-        <div class="chamada__titulo-principal-caixa">
-            <h2 class="chamada__titulo-principal">Olá, seja muito bem vindo ao meu Currículo Online!</h2>
+        <div class="chamada__caixa-itens flex flex--column">
+            <div class="chamada__titulo-principal-caixa">
+                <h2 class="chamada__titulo-principal">Olá, seja muito bem vindo ao meu Currículo Online!</h2>
+            </div>
+            <div class="chamada__titulo-secundario-caixa">
+                <h3 class="chamada__titulo-secundario">
+                    Sou licenciada em Letras e atualmente estou participar do projeto Oracle ONE
+                    na Alura. Fique mais um bocadinho...
+                </h3>
+            </div>
+            <nav class="chamada__menu flex">
+                <ul class="chamada__menu-caixa flex flex--row">
+                    <li class="chamada__menu-item">
+                        <a href="">Github<i
+                                class="chamada__font-awesome fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </li>
+                    <li class="chamada__menu-item">
+                        <a href="">Linkedin<i
+                                class="chamada__font-awesome fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </li>
+                    <li class="chamada__menu-item">
+                        <a href="">Instagram<i
+                                class="chamada__font-awesome fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </li>
+                    <li class="chamada__menu-item">
+                        <a href="">Curriculo<i
+                                class="chamada__font-awesome fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <div class="chamada__titulo-secundario-caixa">
-            <h3 class="chamada__titulo-secundario">
-                Sou licenciada em Letras e atualmente estou participar do projeto Oracle ONE
-                na Alura. Fique mais um bocadinho...
-            </h3>
-        </div>
-        <nav class="chamada__menu flex">
-            <ul class="chamada__menu-caixa flex flex--row">
-                <li class="chamada__menu-item">
-                    <a href="">Github<i class="chamada__font-awesome fa-solid fa-arrow-up-right-from-square"></i></a>
-                </li>
-                <li class="chamada__menu-item">
-                    <a href="">Linkedin<i class="chamada__font-awesome fa-solid fa-arrow-up-right-from-square"></i></a>
-                </li>
-                <li class="chamada__menu-item">
-                    <a href="">Instagram<i class="chamada__font-awesome fa-solid fa-arrow-up-right-from-square"></i></a>
-                </li>
-                <li class="chamada__menu-item">
-                    <a href="">Curriculo<i class="chamada__font-awesome fa-solid fa-arrow-up-right-from-square"></i></a>
-                </li>
-            </ul>
-        </nav>
     </section>
     <main>
         <section class="sobre-mim">
@@ -146,10 +154,10 @@
                         <i class="font-awesome fa-solid fa-tv"></i>Assistir séries
                     </li>
                     <li class="hobby__item">
-                        <i class="font-awesome fa-solid fa-utensils"></i>Comidas diferentes
+                        <i class="font-awesome fa-solid fa-utensils"></i>Comidas
                     </li>
                     <li class="hobby__item">
-                        <i class="font-awesome fa-solid fa-camera-retro"></i>Fotos de Paisagens
+                        <i class="font-awesome fa-solid fa-camera-retro"></i>Fotografia
                     </li>
                     <li class="hobby__item">
                         <i class="font-awesome fa-solid fa-route"></i>Viajar
@@ -179,16 +187,16 @@
                             <img class="formacao__item-image" src="asset/img/alura.svg" alt="Logo da Alura" width="84"
                                 height="84">
                         </div>
-                        <h3 class="formacao__item-titulo">Formação UX Design</h3>
-                        <p class="formacao__item-paragrafo">2019 - Alura</p>
+                        <h3 class="formacao__item-titulo">Front-end Developer</h3>
+                        <p class="formacao__item-paragrafo">2023 - Alura</p>
                     </div>
                     <div class="formacao__itens-caixa">
                         <div class="formacao__caixa-image">
                             <img class="formacao__item-image" src="asset/img/udemy.png" alt="Logo da Udemy" width="84"
                                 height="84">
                         </div>
-                        <h3 class="formacao__item-titulo">Pós-graduação design</h3>
-                        <p class="formacao__item-paragrafo">Em andamento - UFRJ</p>
+                        <h3 class="formacao__item-titulo">Teste manuais e automáticos</h3>
+                        <p class="formacao__item-paragrafo">2023 - Udemy</p>
                     </div>
                 </div>
             </div>
@@ -199,7 +207,7 @@
                     <h2 class="experiencia__titulo" id="projetos">Experiência profissional</h2>
                 </div>
                 <div class="experiencia__caixas flex flex--column flex--center">
-                    <div class="experiencia__itens-caixa">
+                    <div class="experiencia__itens-caixa flex flex--column">
                         <div class="experiencia__item-caixa-image">
                             <img class="experiencia__item-image" src="asset/img/codif.png" alt="">
                         </div>
@@ -211,7 +219,7 @@
                             <button class="experiencia__botao experiencia__botao-demo"><a href="#">Ver demo</a></button>
                         </div>
                     </div>
-                    <div class="experiencia__itens-caixa">
+                    <div class="experiencia__itens-caixa flex flex--column">
                         <div class="experiencia__item-caixa-image">
                             <img class="experiencia__item-image" src="asset/img/forca.png" alt="">
                         </div>
@@ -223,7 +231,7 @@
                             <button class="experiencia__botao experiencia__botao-demo"><a href="#">Ver demo</a></button>
                         </div>
                     </div>
-                    <div class="experiencia__itens-caixa">
+                    <div class="experiencia__itens-caixa flex flex--column">
                         <div class="experiencia__item-caixa-image">
                             <img class="experiencia__item-image" src="asset/img/codesecr.png" alt="">
                         </div>
@@ -235,8 +243,8 @@
                             <button class="experiencia__botao experiencia__botao-demo"><a href="#">Ver demo</a></button>
                         </div>
                     </div>
-                    <div class="experiencia__itens-caixa">
-                        <div class="experiencia__item-caixa">
+                    <div class="experiencia__itens-caixa flex flex--column">
+                        <div class="experiencia__item-caixa-image">
                             <img class="experiencia__item-image" src="asset/img/forca2.png" alt="">
                         </div>
                         <div class="experiencia__item-descricao">
@@ -251,9 +259,9 @@
             </div>
         </section>
         <section class="contacto">
-            <div class="container contacto__caixas">
+            <div class="container contacto__caixas flex flex--row">
                 <div class="contacto__image-caixa">
-                    <img src="asset/img/phoneDesktop.png" alt="" width="80">
+                    <img class="contacto__image" src="asset/img/phoneDesktop.png" alt="" width="80">
                 </div>
                 <div class="contacto__formulario-caixa">
                     <h2 class="contacto__formulario-titulo" id="contacto">Contacto</h2>
@@ -263,12 +271,14 @@
                     <form action="" class="formulario flex flex--column">
                         <fieldset>
                             <div class="input-container">
-                                <input class="input" name="nome" id="nome" type="text" placeholder="Nome" required data-tipo="nome">
+                                <input class="input" name="nome" id="nome" type="text" placeholder="Nome" required
+                                    data-tipo="nome">
                                 <label class="input-label" for="nome">Nome</label>
                                 <span class="input-mensagem-erro">Este campo não está válido!</span>
                             </div>
                             <div class="input-container">
-                                <input class="input" name="email" id="email" type="email" placeholder="Email" required data-tipo="email">
+                                <input class="input" name="email" id="email" type="email" placeholder="Email" required
+                                    data-tipo="email">
                                 <label class="input-label" for="email">E-mail</label>
                                 <span class="input-mensagem-erro">Este campo não está válido!</span>
                             </div>
@@ -279,13 +289,13 @@
                                 <span class="input-mensagem-erro">Este campo não está válido!</span>
                             </div>
                             <div class="input-container">
-                                <textarea class="textarea" name="texto" id="texto" type="text"
-                                    placeholder="Mensagem" required data-tipo="texto"></textarea>
+                                <textarea class="textarea" name="texto" id="texto" type="text" placeholder="Mensagem"
+                                    required data-tipo="texto"></textarea>
                                 <label class="textarea-label" for="texto" data-tipo="textareaLabel">Mensagem</label>
                                 <span class="input-mensagem-erro">Este campo não está válido!</span>
                             </div>
                         </fieldset>
-                        <button type="submit" class="formulario__botao">Enviar mensagem</button>
+                        <button class="formulario__botao">Enviar mensagem</button>
                     </form>
                 </div>
             </div>

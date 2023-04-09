@@ -109,6 +109,7 @@ body {
     align-items: center;
     margin-top: 0.6rem;
     margin-bottom: 2rem;
+    gap: 1rem;
 }
 
 .cabecalho__titulo-caixa {
@@ -1000,7 +1001,10 @@ Rodapé
         height: 260px;
         width: 260px;
     }
-    .cabecalho__menu-nav-item {
-        padding: 1rem;
+    .cabecalho__menu-nav-caixa{
+        gap:0.5rem;
     }
+    /* .cabecalho__menu-nav-item {
+        padding: 1rem;
+    } */
 }
